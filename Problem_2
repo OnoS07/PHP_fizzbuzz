@@ -1,0 +1,25 @@
+<?php
+
+function fizzbuzz($num1, $num2){
+  $count = 0;
+
+  while ($count < 100){
+    $count ++;
+    if ($count % ($num1 * $num2) == 0){
+    		echo "大野颯一郎";
+    } elseif ($count % $num1 == 0){
+    		echo "大野";
+    } elseif ($count % $num2 == 0){
+    		echo "颯一郎";
+    } else {
+    		echo $count;
+    }
+  }
+}
+
+$num1 = $argv[1];
+$num2 = $argv[2];
+
+fizzbuzz($num1, $num2);
+
+?>

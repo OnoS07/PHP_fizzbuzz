@@ -1,0 +1,43 @@
+<?php
+
+function fizzbuzz($num1, $num2, $num3, $num4){
+
+  if ($num3 < $num4){
+    $count = $num3 -1;
+    while ($count < $num4){
+      $count ++;
+      if ($count % ($num1 * $num2) == 0){
+      		echo "大野颯一郎";
+      } elseif ($count % $num1 == 0){
+      		echo "大野";
+      } elseif ($count % $num2 == 0){
+      		echo "颯一郎";
+      } else {
+      		echo $count;
+      }
+    }
+  } else {
+    $count = $num4 - 1;
+    while ($count < $num3){
+      $count ++;
+      if ($count % ($num1 + $num2) == 0){
+          echo "大野颯一郎";
+      } elseif ($count % $num1 == 0){
+          echo "大野";
+      } elseif ($count % $num2 == 0){
+          echo "颯一郎";
+      } else {
+          echo $count;
+      }
+    }
+  }
+}
+
+$num1 = $argv[1];
+$num2 = $argv[2];
+$num3 = $argv[3];
+$num4 = $argv[4];
+
+fizzbuzz($num1, $num2, $num3, $num4);
+
+?>

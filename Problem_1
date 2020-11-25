@@ -1,0 +1,18 @@
+<?php
+
+$count = 0;
+
+while ($count < 100){
+  $count ++;
+  if ($count % (3 * 5) == 0){
+  		echo "大野颯一郎";
+  } elseif ($count % 3 == 0){
+  		echo "大野";
+  } elseif ($count % 5 == 0){
+  		echo "颯一郎";
+  } else {
+  		echo $count;
+  }
+}
+
+?>
